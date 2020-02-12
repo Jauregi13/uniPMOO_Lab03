@@ -56,7 +56,7 @@ public class LabS03Simulator {
 	 * Method for testing Email sending process
 	 */
 	public static void testEmailSending() {
-/*
+
 		
 		MailServer ms1 = new MailServer();
 		
@@ -71,7 +71,7 @@ public class LabS03Simulator {
 		
 		System.out.println("Show all emails in the server:");
 		ms1.showAllEmails();
-*/
+
 	}
 
 }

@@ -21,6 +21,7 @@ public class MailServer {
 	 */
 	public MailServer() {
 		
+		 this.emailList = new Email[MAXIMUM_CAPACITY];
 	}
 	
 	/**
@@ -28,6 +29,9 @@ public class MailServer {
 	 * @param pMail Email to be stored
 	 */
 	public void storeEmail(Email pMail) {
+		
+		this.emailList[numEmails] = pMail;
+		this.numEmails++;
 
 	}
 	
@@ -35,6 +39,11 @@ public class MailServer {
 	 * Method for showing all emails stored in the server
 	 */
 	public void showAllEmails() {
+		
+		for(int i=0;i<this.emailList.length;i++) {
+			
+			this.emailList[i].showEmail();
+		}
 	
 	}
 	
