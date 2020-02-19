@@ -58,7 +58,7 @@ public class LabS03Simulator {
 	public static void testEmailSending() {
 
 		
-		MailServer ms1 = new MailServer();
+		MailServer ms1 = MailServer.getInstance();
 		
 		MailClient mc1 = new MailClient(ms1, "name1");
 		MailClient mc2 = new MailClient(ms1, "name2");
@@ -71,6 +71,7 @@ public class LabS03Simulator {
 		
 		System.out.println("Show all emails in the server:");
 		ms1.showAllEmails();
+		
 
 	}
 

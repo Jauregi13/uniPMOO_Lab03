@@ -1,5 +1,11 @@
 package mailSystem;
 
+/**
+ * 
+ * @author Jon Jauregi
+ *
+ */
+
 public class Email {
 	
 	private String sender;
@@ -7,7 +13,13 @@ public class Email {
 	private String subject;
 	private String text;
 	
-	
+	/**
+	 * 
+	 * @param sender
+	 * @param receiver
+	 * @param subject
+	 * @param text
+	 */
 	public Email(String sender, String receiver, String subject, String text) {
 		
 		this.sender = sender;
@@ -16,11 +28,21 @@ public class Email {
 		this.text = text;
 	}
 	
+	/**
+	 * 
+	 * @param sender
+	 * @param receiver
+	 * @param subject
+	 */	
 	public Email(String sender, String receiver, String subject) {
 		
 		this(sender,receiver,subject,"");
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public String getSender() {
 		return sender;
 	}
